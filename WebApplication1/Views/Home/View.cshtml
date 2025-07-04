@@ -1,0 +1,26 @@
+﻿
+@model IEnumerable<WebApplication1.Models.Student>
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>Students Data</h2>
+
+<table>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Actions</td>
+    </tr>
+    @foreach(var stud in Model)
+            {
+                <tr>
+                    <td>@stud.Id</td>
+                    <td>@stud.Name</td>
+                    <td>@stud.Age</td>
+                </tr>
+            }
+    
+</table>
+

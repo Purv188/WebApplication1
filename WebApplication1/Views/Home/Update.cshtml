@@ -1,0 +1,15 @@
+﻿
+@model WebApplication1.Models.Student
+@{
+    ViewBag.Title = "Update";
+}
+
+<h2>Update</h2>
+
+<form method="post" action="/home/Update">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <input type="text" name="Name" value="@Model.Name" placeholder="Enter Name"/>
+    <input type="text" name="Age" value="@Model.Age" placeholder="Enter Age"/>
+    <input type="submit" value="Submit"/>
+</form>
+
